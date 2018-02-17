@@ -1,0 +1,17 @@
+
+<nav> Navigation </nav>
+
+<main> 
+
+	    Principal content <br> 
+	    {{ getDescription() | slice : 1:150 | uppercase}} <!-- Nutzung der slicePipe -->
+
+</main>
+
+ <my-user [date]="appCompoBirthdate"> </my-user> <!-- Bindung der Komponent-Eigenschaft-->
+ <animals (myevent)="ShowTransportedData($event)"></animals>
+
+ <strong>{{ animalsTitle }}</strong> <!-- Bindung des Komponent-Ereignis -->
+ 
+
+<footer>Footer</footer>
